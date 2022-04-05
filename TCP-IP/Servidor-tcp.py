@@ -32,6 +32,7 @@ while True:
        if not mensagem:
            break
 
+       mensagem = mensagem.upper()
        # Exibindo a mensagem recebida
        print('\nCliente..:', cliente)
        print('Mensagem.:', mensagem.decode())
