@@ -1,4 +1,3 @@
-from mmap import PROT_WRITE
 import socket
 #importa a bib socket
 
@@ -19,6 +18,7 @@ Mensagem_Recebida, END_cliente = udp.recvfrom(1024)
 # socket.recvfrom(bufsize[, flags])  deve ser uma potencia de 2
 #Recebe dados do soquete = um par (string, endereco) onde string eh uma string representando os dados recebidos
 
+Mensagem_Recebida.upper()
 print ("Recebi = ",Mensagem_Recebida," , Do cliente", END_cliente)
 # endereco eh o endereco do socket que enviou os dados.
 
