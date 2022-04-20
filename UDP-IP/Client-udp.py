@@ -1,24 +1,21 @@
-###############cliente UDP###########
-#!/usr/bin/python3 
-#cliente_UDP.py
-
+###############cliente UDP##########
 import socket
-IP_Servidor = '192.168.1.102' 
+HOST = '192.168.1.102' 
 # Endereco IP do Servidor
              
-PORTA_Servidor = 5000                  
+PORT = 5000                  
 # Porta em que o servidor estara ouvindo
 
 udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 #  socket.SOCK_DGRAM=usaremos UDP
 
-DESTINO = (IP_Servidor, PORTA_Servidor) 
+destino = (HOST, PORT) 
 #destino(IP + porta) do Servidor
 
 Mensagem = input()   
 # Mensagem recebera dados do teclado           
 
-udp.sendto (bytes(Mensagem,"utf8"), DESTINO)
+udp.sendto (bytes(Mensagem,"utf8"), destino)
 # enviar a mensgem para o destino(IP + porta)
 #bytes(Mensagem,"utf8") = converte tipo  str para byte
           
