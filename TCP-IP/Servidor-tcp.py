@@ -7,9 +7,9 @@
 #Enviar/Receber dados (permanecer nesse passo enquanto tiver dados para enviar/receber);
 #Fechar o socket.
 
-import socket
+import socket #biblioteca
 
-HOST = '192.168.1.102'     # Endereço IP do Servidor
+HOST = 'ip'     # Endereço IP do Servidor
 PORT = 5000            # Porta que o Servidor está
 tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 origem = (HOST, PORT)

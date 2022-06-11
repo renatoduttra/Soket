@@ -1,6 +1,6 @@
 ###############cliente UDP##########
-import socket
-HOST = '192.168.1.102' 
+import socket #biblioteca
+HOST = 'ip' 
 # Endereco IP do Servidor
              
 PORT = 5000                  
